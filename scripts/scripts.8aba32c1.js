@@ -1128,7 +1128,9 @@ function(a) {
             }
             else {l()}
         }
-        else {l()}
+        else {h.login().then(function () {
+                    l()
+                });}
         
     }
 ]), angular.module("guidelinePreviewApp").controller("SectionCtrl", ["Section", "Guideline", "toastr", "$scope", "$routeParams", "$location", "ErrorService", "localStorageService", "LoginService",
@@ -1163,7 +1165,9 @@ function(a) {
             }
             else {m()}
         }
-        else {l()}
+        else {i.login().then(function () {
+                    m()
+                });}
     }
 ]), angular.module("guidelinePreviewApp").controller("RecommendationCtrl", ["$scope", "Recommendation", "Guideline", "toastr", "$routeParams", "$location", "ErrorService", "$rootScope", "localStorageService", "LoginService",
     function(a, b, c, d, e, f, g, h, i, j) {
@@ -1198,7 +1202,9 @@ function(a) {
             }
             else {n()}
         }
-        else {n()}
+        else {j.login().then(function () {
+                    n()
+                });}
     }
 ]), angular.module("guidelinePreviewApp").controller("MainCtrl", ["$scope", "Guideline", "toastr", "ErrorService", "localStorageService", "LoginService",
     function(a, b, c, d, e, f) {
@@ -1219,7 +1225,9 @@ function(a) {
             }
             else {g()}
         }
-        else {g()}
+        else {f.login().then(function () {
+                    g()
+                });}
     }
 ]).filter("isType", function() {
     return function(a, b) {
