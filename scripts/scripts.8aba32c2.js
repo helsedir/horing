@@ -131,6 +131,11 @@ angular.module("guidelinePreviewApp", ["ngRoute", "ngResource", "toastr", "Local
         return d.request = e, d.responseError = f, d
     }
 ]);
+angular.module('guidelinePreviewApp').config(['$httpProvider', function($httpProvider) {
+
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
+});
 var apiUrl = "https://data.helsedirektoratet.no/api/v1/";
 angular.module("guidelinePreviewApp").factory("Guideline", ["$resource",
     function(a) {
