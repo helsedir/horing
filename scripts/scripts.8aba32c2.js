@@ -75,10 +75,6 @@ angular.module("guidelinePreviewApp", ["ngRoute", "ngResource", "toastr", "Local
     function(a) {
         a.setPrefix("ls")
     }
-]).config(["$httpProvider",
-    function($httpProvider) {
-        delete $httpProvider.defaults.headers.common['X-Requested-With'];
-    }
 ]).config(["$routeProvider",
     function(a) {
         a.when("/", {
