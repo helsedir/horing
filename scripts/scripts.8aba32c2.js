@@ -337,7 +337,7 @@ angular.module("guidelinePreviewApp").factory("Guideline", ["$resource",
                 password: "Sd@M5n!w7W2s"
             }, f = "https://data.helsedirektoratet.no/",
             g = function() {
-                console.log(e), console.log(f);
+                //console.log(e), console.log(f);
                 var d = "grant_type=password&username=" + e.userName + "&password=" + e.password,
                     g = b.defer();
                 return c.post(f + "token", d, {
