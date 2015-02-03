@@ -1320,9 +1320,9 @@ function(a) {
         restrict: "E",
         replace: "true"
     }
-}), angular.module("guidelinePreviewApp").directive("contact", function() {
+}), angular.module("guidelinePreviewApp").directive("contactinfo", function() {
     return {
-        templateUrl: "views/partials/_contact.html",
+        templateUrl: "views/partials/_contactinfo.html",
         restrict: "E",
         replace: "true"
     }
