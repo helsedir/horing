@@ -63,58 +63,9 @@
 					<!--<a href="#" class="ikon_metode"><span></span>metode</a>-->
 				</div>
 				<aside class=" aside guidelines col-8">
-					<div class=" module module_person ">
-						<h5 class=" module_description">Tilbakemeldingsskjema til høringsutkast</h5>
-						<a ng-if="retningslinje.guidelineId == '1039'" href="http://hoyringar.azurewebsites.net/skjema/Svarskjema_Hoyring  Retningslinje behandling og rehab - rus.doc">
-							<div class="name">Last ned tilbakemeldingsskjema (word)</div>
-						</a>
-						<a ng-if="retningslinje.guidelineId == '8'" href="#">
-							<div class="name">Kommer snart...</div>
-						</a>
-					</div>
-					<div class=" module module_person ">
-						<h5 class=" module_description">Ansvarlig for retningslinjen</h5>
-						<a ng-if="retningslinje.guidelineId == '1039'" href="mailto:brittelise.bakstad@helsedir.no?subject=Høringsutkast: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">
-							<div class="name">Avdeling Psykisk helsevern og rus</div>
-						</a>
-						<a ng-if="retningslinje.guidelineId == '8'" href="#">
-							<div class="name">Avdeling X</div>
-						</a>
-						<div ng-if="retningslinje.guidelineId == '1039'"  class="person_information">
-							<p class="phone">e-post: <a href="mailto:brittelise.bakstad@helsedir.no?subject=Høringsutkast: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">brittelise.bakstad@helsedir.no</a></p>
-						</div>
-						<div ng-if="retningslinje.guidelineId == '8'"  class="person_information">
-							<p class="phone">e-post: <a href="#">kommer...</a></p>
-						</div>
-					</div>
-					<div class=" module module_person ">
-						<h5 class=" module_description">Tekniske feil</h5>
-						<a href="mailto:Tor.Anders.Dybing@helsedir.no?subject=Teknisk feil: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">
-							<div class="name">Vises ikke innholdet i retningslinjen?</div>
-						</a>
-						<div class="person_information">
-							<p class="phone">e-post: <a href="mailto:Tor.Anders.Dybing@helsedir.no?subject=Teknisk feil: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">tor.anders.dybing@helsedir.no</a></p>
-						</div>
-					</div>
-<!--
-					<div class="module module_related green">
-						<h3>Relaterte anbefalinger</h3>
-						<ul class="linklist">
-							<li><a href="#">Sepsis</a></li>
-							<li><a href="#">Antibiotika</a></li>
-							<li><a href="#">Sepsis</a></li>
-						</ul>
-						<img class="pulse" src="img/modules/EKG-groenn.png" alt="">
-					</div>
-					<div class="module module_related blue">
-						<h3>Relaterte retningslinjer</h3>
-						<ul class="linklist">
-							<li><a href="#">Antibiotika</a></li>
-							<li><a href="#">Sepsis</a></li>
-							<li><a href="#">Sepsis</a></li>
-						</ul>
-						<img class="pulse" src="img/modules/EKG-lyseblaa.png" alt="">
-					</div>-->
+					<feedback></feedback>
+					<contact></contact>
+					<!--<related></related>-->
 				</aside>
 				</div> <!-- cols -->
 				</div><!-- row -->
