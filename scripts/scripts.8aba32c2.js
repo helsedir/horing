@@ -1323,7 +1323,7 @@ function(a) {
 }), angular.module("guidelinePreviewApp").directive("contactinfo", function() {
     return {
         templateUrl: "views/partials/_contactinfo.html",
-        restrict: "A",
+        restrict: "E",
         replace: "true"
     }
 }), angular.module("guidelinePreviewApp").directive("feedback", function() {
