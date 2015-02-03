@@ -68,14 +68,23 @@
 						<a ng-if="retningslinje.guidelineId == '1039'" href="http://hoyringar.azurewebsites.net/skjema/Svarskjema_Hoyring  Retningslinje behandling og rehab - rus.doc">
 							<div class="name">Last ned tilbakemeldingsskjema (word)</div>
 						</a>
+						<a ng-if="retningslinje.guidelineId == '8'" href="#">
+							<div class="name">Kommer snart...</div>
+						</a>
 					</div>
 					<div class=" module module_person ">
 						<h5 class=" module_description">Ansvarlig for retningslinjen</h5>
-						<a href="mailto:brittelise.bakstad@helsedir.no?subject=Høringsutkast: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">
+						<a ng-if="retningslinje.guidelineId == '1039'" href="mailto:brittelise.bakstad@helsedir.no?subject=Høringsutkast: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">
 							<div class="name">Avdeling Psykisk helsevern og rus</div>
 						</a>
-						<div class="person_information">
+						<a ng-if="retningslinje.guidelineId == '8'" href="#">
+							<div class="name">Avdeling X</div>
+						</a>
+						<div ng-if="retningslinje.guidelineId == '1039'"  class="person_information">
 							<p class="phone">e-post: <a href="mailto:brittelise.bakstad@helsedir.no?subject=Høringsutkast: Nasjonal faglig retningslinje for behandling og rehabilitering av rusmiddelproblemer og avhengighet">brittelise.bakstad@helsedir.no</a></p>
+						</div>
+						<div ng-if="retningslinje.guidelineId == '8'"  class="person_information">
+							<p class="phone">e-post: <a href="#">kommer...</a></p>
 						</div>
 					</div>
 					<div class=" module module_person ">
