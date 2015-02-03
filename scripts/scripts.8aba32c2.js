@@ -1320,6 +1320,18 @@ function(a) {
         restrict: "E",
         replace: "true"
     }
+}), angular.module("guidelinePreviewApp").directive("contact", function() {
+    return {
+        templateUrl: "views/partials/_contact.html",
+        restrict: "E",
+        replace: "true"
+    }
+}), angular.module("guidelinePreviewApp").directive("feedback", function() {
+    return {
+        templateUrl: "views/partials/_feedback.html",
+        restrict: "E",
+        replace: "true"
+    }
 }), angular.module("guidelinePreviewApp").directive("aboutGuidelineExpand", function() {
     return {
         restrict: "A",
